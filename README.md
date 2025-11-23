@@ -19,11 +19,7 @@ A modern, responsive portfolio website showcasing my work as a Data Analyst & An
 
 ## Live Demo
 
-Visit: [Your GitHub Pages URL will be here]
-
-## Local Development
-
-Simply open `index.html` in your browser.
+Visit: [https://sofaquitegud.github.io/](https://sofaquitegud.github.io/)
 
 ## Contact
 

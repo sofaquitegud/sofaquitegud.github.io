@@ -1,198 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Syafiq Farhan | Analytics Engineer</title>
-    <meta name="description" content="Portfolio of Muhammad Syafiq Farhan, a Data Analyst & Analytics Engineer specializing in Python, SQL, and Alteryx.">
-    
+    <title>Muhammad Syafiq Farhan | Data Analyst & Analytics Engineer</title>
+    <meta name="description"
+        content="Portfolio of Muhammad Syafiq Farhan - Data Analyst & Analytics Engineer specializing in Python, SQL, Alteryx, and Tableau.">
+
     <!-- Open Graph / LinkedIn Preview -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sofaquitegud.github.io/">
     <meta property="og:title" content="Muhammad Syafiq Farhan | Analytics Engineer">
-    <meta property="og:description" content="Data Analyst & Analytics Engineer specializing in Python, SQL, and Alteryx. Transforming raw data into actionable insights.">
+    <meta property="og:description"
+        content="Data Analyst & Analytics Engineer specializing in Python, SQL, and Alteryx. Transforming raw data into actionable insights.">
     <meta property="og:image" content="https://sofaquitegud.github.io/portfolio-preview.png">
-    
+
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://sofaquitegud.github.io/">
     <meta name="twitter:title" content="Muhammad Syafiq Farhan | Analytics Engineer">
-    <meta name="twitter:description" content="Data Analyst & Analytics Engineer specializing in Python, SQL, and Alteryx.">
+    <meta name="twitter:description"
+        content="Data Analyst & Analytics Engineer specializing in Python, SQL, and Alteryx.">
     <meta name="twitter:image" content="https://sofaquitegud.github.io/portfolio-preview.png">
-    
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
+    <!-- Navigation -->
     <nav class="navbar">
-        <div class="container nav-container">
+        <div class="nav-container">
             <a href="#" class="logo">Syafiq<span class="accent">.</span></a>
-            <!-- Navbar links removed as requested -->
-            <div class="nav-controls">
-                <button id="theme-toggle" aria-label="Toggle Dark/Light Mode">
-                    <i class="fas fa-moon"></i>
-                </button>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
     </nav>
 
-    <main class="container bento-grid">
-        <!-- Profile Card (Large) -->
-        <div class="bento-card profile-card">
-            <div class="profile-header">
-                <div class="profile-img-container">
-                    <img src="my-profile-pic.jpg" alt="Muhammad Syafiq Farhan" class="profile-img">
-                </div>
-                <div class="profile-info">
-                    <span class="greeting">Hello, I'm</span>
-                    <h1>Muhammad Syafiq Farhan</h1>
-                    <h2 class="role">Data Analyst & Analytics Engineer</h2>
-                    <p class="bio">
-                        I am a Data Analyst dedicated to transforming raw data into strategic assets. From automating multi-state tax calculations to analyzing half a million records of NFL tracking data, I use Python, Alteryx, and Tableau to build tools that improve decision accuracy and operational efficiency. My goal is to deliver data stories that are not only visually compelling but technically robust.
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="my-profile-pic.jpg" alt="Muhammad Syafiq Farhan">
+                <div class="image-glow"></div>
+            </div>
+            <span class="hero-greeting">Hello, I'm</span>
+            <h1 class="hero-name">Muhammad Syafiq Farhan</h1>
+            <h2 class="hero-role">Data Analyst</h2>
+            <p class="hero-bio">
+                Just a data geek cookin' up dashboards and automating workflows so you don't have to. 📊 Python, SQL,
+                and Alteryx are my main characters. No cap, just insights. 🚀
+            </p>
+            <div class="hero-buttons">
+                <a href="mailto:syafiq.mfaridz@gmail.com" class="btn-primary">
+                    <i class="fas fa-envelope"></i> Contact Me
+                </a>
+                <a href="Syafiq - Data Analyst.pdf" download class="btn-secondary">
+                    <i class="fas fa-download"></i> Resume
+                </a>
+            </div>
+            <div class="hero-socials">
+                <a href="https://www.linkedin.com/in/syfqfrhnn" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/sofaquitegud" target="_blank" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="mailto:syafiq.mfaridz@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Hey there! 👋 I'm a fresh grad from IIUM with a degree in Data Science & Computational
+                        Intelligence. I'm basically obsessed with turning messy data into something that actually makes
+                        sense — preferably with a good cup of coffee in hand ☕
                     </p>
-                    <div class="profile-actions">
-                        <a href="mailto:syafiq.mfaridz@gmail.com" class="btn-primary">Contact Me</a>
-                        <a href="Syafiq - Data Analyst.pdf" download class="btn-secondary">Resume</a>
+                    <p>
+                        Currently vibing as an Analytics Engineer, where I get to build dashboards, automate boring
+                        stuff, and make data look pretty. Fun fact: I once cut tax reporting time by 70% — my team was
+                        hyped!
+                    </p>
+                    <p>
+                        When I'm not wrangling data, you'll find me hunting for the best coffee spots, tinkering with
+                        side projects, or Googling "why is my code not working" for the 100th time 😅
+                    </p>
+                </div>
+                <div class="about-info">
+                    <div class="status-badge">
+                        <span class="status-dot"></span>
+                        <span>Open to Work</span>
+                    </div>
+                    <div class="location-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Kuala Lumpur, Malaysia</span>
+                    </div>
+                    <div class="timezone-info">
+                        <i class="fas fa-clock"></i>
+                        <span>GMT+8</span>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Status Card (Small) -->
-        <div class="bento-card status-card">
-            <div class="status-indicator">
-                <span class="status-dot"></span>
-                <span class="status-text">Open to Work</span>
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">September 2025 - Present</span>
+                        <h3>Analytics Engineer</h3>
+                        <h4>OR Technologies Sdn Bhd</h4>
+                        <ul>
+                            <li>Developed Sales & Use Tax Analytics workflow, automating calculations across multiple
+                                states</li>
+                            <li>Reduced manual tax reporting time by ~70% and improved audit visibility</li>
+                            <li>Designed interactive Tableau dashboard for compliance tracking</li>
+                            <li>Provided Tier-2 technical support for Tableau Server</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">October 2024 - April 2025</span>
+                        <h3>AI Researcher Intern</h3>
+                        <h4>TM Research & Development</h4>
+                        <ul>
+                            <li>Developed StaffHealthAnalyzer, generating "Latest" and "Trending" wellness snapshots
+                            </li>
+                            <li>Conducted extensive feature engineering on OCR-based data</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <p>Based in Malaysia</p>
-            <p class="timezone">GMT+8</p>
         </div>
+    </section>
 
-        <!-- Socials Card (Small) -->
-        <div class="bento-card social-card">
-            <h3>Connect</h3>
-            <div class="social-links-grid">
-                <a href="https://www.linkedin.com/in/syfqfrhnn" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/sofaquitegud" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    <!-- Education Section -->
+    <section id="education" class="section education-section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-card">
+                <div class="education-header">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-info">
+                        <h3>Bachelor of Computer Science (Honours)</h3>
+                        <h4>Data Science and Computational Intelligence</h4>
+                        <p class="education-school">International Islamic University Malaysia (IIUM)</p>
+                        <span class="education-date">Graduated August 2025</span>
+                    </div>
+                </div>
+                <div class="education-achievement">
+                    <div class="achievement-badge">
+                        <i class="fas fa-trophy"></i>
+                        <span>🥇 1st Place - InnovaTex 2024</span>
+                    </div>
+                    <p class="achievement-project">
+                        <strong>Final Year Project:</strong> "Deep Learning-based Evaluation of the Relationship between
+                        Mandibular Third Molar and Mandibular Canal on CBCT"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+
+            <!-- Featured Project -->
+            <div class="project-featured">
+                <div class="project-featured-content">
+                    <span class="project-badge">Featured Project</span>
+                    <h3>Sales & Use Tax Automation</h3>
+                    <p>Automated multi-state tax calculations using Alteryx & Tableau, cutting manual processing time by
+                        70%. Built end-to-end workflow for compliance tracking and audit visibility.</p>
+                    <div class="project-tech">
+                        <span>Alteryx</span>
+                        <span>Tableau</span>
+                        <span>Automation</span>
+                    </div>
+                    <a href="https://github.com/sofaquitegud/sales-use-tax-analytics" target="_blank"
+                        class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+                <div class="project-featured-visual">
+                    <i class="fas fa-chart-pie"></i>
+                </div>
+            </div>
+
+            <!-- Project Grid -->
+            <div class="projects-grid">
+                <a href="https://github.com/sofaquitegud/omnichannel-sales-engine" target="_blank" class="project-card">
+                    <h3>Omnichannel Sales Engine</h3>
+                    <p>End-to-end e-commerce ETL pipeline with Star Schema data warehouse and Streamlit dashboard.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>PostgreSQL</span>
+                        <span>Airflow</span>
+                        <span>Streamlit</span>
+                    </div>
+                </a>
+                <a href="https://github.com/sofaquitegud/NFL_Big_Data_Bowl_2026" target="_blank" class="project-card">
+                    <h3>NFL Big Data Bowl 2026</h3>
+                    <p>Analyzed 560K+ player-tracking records to explore behavioral patterns and game dynamics.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>Visualization</span>
+                    </div>
+                </a>
+                <a href="https://github.com/sofaquitegud/weather-data-pipeline" target="_blank" class="project-card">
+                    <h3>Weather Data Pipeline</h3>
+                    <p>Automated ETL pipeline for weather forecast data using Apache Airflow and PostgreSQL.</p>
+                    <div class="project-tech">
+                        <span>Airflow</span>
+                        <span>PostgreSQL</span>
+                        <span>Docker</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-chart-bar"></i> Visualization</h3>
+                    <div class="skill-pills">
+                        <span>Tableau</span>
+                        <span>Power BI</span>
+                        <span>Streamlit</span>
+                        <span>Plotly</span>
+                        <span>Matplotlib</span>
+                        <span>Seaborn</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Data Analysis</h3>
+                    <div class="skill-pills">
+                        <span>EDA</span>
+                        <span>Statistical Analysis</span>
+                        <span>Hypothesis Testing</span>
+                        <span>A/B Testing</span>
+                        <span>Regression Analysis</span>
+                        <span>KPI Definition</span>
+                        <span>Star Schema Modeling</span>
+                        <span>Data Cleaning</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Languages</h3>
+                    <div class="skill-pills">
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>PostgreSQL</span>
+                        <span>Alteryx</span>
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                        <span>Scikit-learn</span>
+                        <span>Excel</span>
+                        <span>Git</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-cogs"></i> Data Engineering</h3>
+                    <div class="skill-pills">
+                        <span>Apache Airflow</span>
+                        <span>ETL Pipelines</span>
+                        <span>Docker</span>
+                        <span>Data Warehousing</span>
+                        <span>API Integration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section certifications-section">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="cert-grid">
+                <a href="https://www.credly.com/badges/9ba890db-3544-4fa0-8de3-948a7c8e6a20/linked_in_profile"
+                    target="_blank" class="cert-card">
+                    <i class="fas fa-certificate"></i>
+                    <span>Alteryx Designer Advanced</span>
+                </a>
+                <a href="https://www.credly.com/badges/29634630-e330-4984-b097-0ab23a81d20e/public_url" target="_blank"
+                    class="cert-card">
+                    <i class="fas fa-certificate"></i>
+                    <span>Alteryx Server Admin</span>
+                </a>
+                <a href="https://www.coursera.org/account/accomplishments/specialization/5HMST5ZVDDHY" target="_blank"
+                    class="cert-card">
+                    <i class="fab fa-google"></i>
+                    <span>Google Advanced Data Analytics</span>
+                </a>
+                <a href="https://www.coursera.org/account/accomplishments/specialization/O6I3JO6SR2LP" target="_blank"
+                    class="cert-card">
+                    <i class="fab fa-google"></i>
+                    <span>Google Business Intelligence</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="contact-text">Got a project in mind or just want to chat? Hit me up! 🚀</p>
+            <a href="mailto:syafiq.mfaridz@gmail.com" class="btn-primary btn-large">
+                <i class="fas fa-paper-plane"></i> Send an Email
+            </a>
+            <div class="contact-socials">
+                <a href="https://www.linkedin.com/in/syfqfrhnn" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/sofaquitegud" target="_blank" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
                 <a href="mailto:syafiq.mfaridz@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
+    </section>
 
-        <!-- Experience Card (Medium) -->
-        <div class="bento-card experience-card">
-            <h3><i class="fas fa-briefcase"></i> Experience</h3>
-            <div class="mini-timeline">
-                <div class="mini-timeline-item">
-                    <span class="date">Sep 2025 - Present</span>
-                    <h4>Analytics Engineer</h4>
-                    <p>OR Technologies Sdn Bhd</p>
-                </div>
-                <div class="mini-timeline-item">
-                    <span class="date">Oct 2024 - Apr 2025</span>
-                    <h4>AI Researcher Intern</h4>
-                    <p>TM Research & Development</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Featured Project Card (Large) -->
-        <div class="bento-card project-card-featured">
-            <div class="project-content">
-                <div class="project-badge">Featured Project</div>
-                <h3>Sales & Use Tax Automation</h3>
-                <p>Automated multi-state tax calculations using Alteryx & Tableau, cutting manual processing time by 70%.</p>
-                <div class="tech-stack-mini">
-                    <span>Alteryx</span>
-                    <span>Tableau</span>
-                    <span>Automation</span>
-                </div>
-                <a href="https://github.com/sofaquitegud/sales-use-tax-analytics" target="_blank" class="project-link"><i class="fab fa-github"></i> View Code</a>
-            </div>
-            <div class="project-visual">
-                <i class="fas fa-chart-pie"></i>
-            </div>
-        </div>
-
-        <!-- Skills Card (Medium) -->
-        <div class="bento-card skills-card">
-            <h3><i class="fas fa-tools"></i> Tech Stack</h3>
-            <div class="skills-cloud">
-                <span>Python</span>
-                <span>SQL</span>
-                <span>Alteryx</span>
-                <span>Tableau</span>
-                <span>Power BI</span>
-                <span>Streamlit</span>
-                <span>Pandas</span>
-                <span>NumPy</span>
-                <span>Scikit-learn</span>
-                <span>Matplotlib</span>
-                <span>Plotly</span>
-                <span>Excel</span>
-                <span>Git</span>
-                <span>R</span>
-                <span>EDA</span>
-                <span>Feature Engineering</span>
-                <span>Hypothesis Testing</span>
-                <span>SHAP</span>
-                <span>Data Cleaning</span>
-            </div>
-        </div>
-
-        <!-- More Projects Card (Medium) -->
-        <div class="bento-card projects-list-card">
-            <h3>More Projects</h3>
-            <ul class="project-list-compact">
-                <li>
-                    <a href="https://github.com/sofaquitegud/travel-insurance-analysis" target="_blank">
-                        <span class="project-name">Travel Insurance Analysis</span>
-                        <i class="fas fa-external-link-alt"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/sofaquitegud/NFL_Big_Data_Bowl_2026" target="_blank">
-                        <span class="project-name">NFL Big Data Bowl 2026</span>
-                        <i class="fas fa-external-link-alt"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/sofaquitegud/ehealth-analyser" target="_blank">
-                        <span class="project-name">Staff Health Metrics Tool</span>
-                        <i class="fas fa-external-link-alt"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Certifications Card (Small) -->
-        <div class="bento-card cert-card">
-            <h3><i class="fas fa-certificate"></i> Certifications</h3>
-            <div class="cert-badges">
-                <a href="https://www.credly.com/badges/9ba890db-3544-4fa0-8de3-948a7c8e6a20/linked_in_profile" target="_blank" class="cert-badge alteryx">
-                    Alteryx Designer Advanced
-                </a>
-                <a href="https://www.credly.com/badges/29634630-e330-4984-b097-0ab23a81d20e/public_url" target="_blank" class="cert-badge alteryx">
-                    Alteryx Server Admin
-                </a>
-                <a href="https://www.coursera.org/account/accomplishments/specialization/5HMST5ZVDDHY" target="_blank" class="cert-badge google">
-                    Google Advanced Data Analytics
-                </a>
-                <a href="https://www.coursera.org/account/accomplishments/specialization/O6I3JO6SR2LP" target="_blank" class="cert-badge google">
-                    Google Business Intelligence
-                </a>
-            </div>
-        </div>
-    </main>
-
+    <!-- Footer -->
     <footer>
-        <div class="container footer-content">
+        <div class="container">
             <p>&copy; <span id="year"></span> Muhammad Syafiq Farhan. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>

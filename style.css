@@ -108,6 +108,8 @@ body.light-mode .navbar {
     font-size: 1.8rem;
     font-weight: 800;
     color: var(--text-primary);
+    cursor: default;
+    pointer-events: none;
 }
 
 .logo .accent {

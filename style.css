@@ -108,8 +108,8 @@ body.light-mode .navbar {
     font-size: 1.8rem;
     font-weight: 800;
     color: var(--text-primary);
-    cursor: default;
-    pointer-events: none;
+    cursor: pointer;
+    pointer-events: auto;
 }
 
 .logo .accent {
@@ -145,6 +145,25 @@ body.light-mode .navbar {
 
 .nav-links a:hover::after {
     width: 100%;
+}
+
+.nav-links a.active {
+    color: var(--text-primary);
+}
+
+.nav-links a.active::after {
+    width: 100%;
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: 1px solid var(--glass-border);
+    color: var(--text-primary);
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .nav-controls {
@@ -1015,8 +1034,43 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .nav-container {
+        position: relative;
+    }
+
     .nav-links {
-        display: none;
+        display: flex;
+        position: absolute;
+        top: calc(100% + 0.5rem);
+        right: 1.5rem;
+        width: min(280px, calc(100vw - 3rem));
+        flex-direction: column;
+        gap: 0.2rem;
+        padding: 0.8rem;
+        background: rgba(10, 10, 15, 0.95);
+        border: 1px solid var(--glass-border);
+        border-radius: 14px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-8px);
+        transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .nav-links a {
+        padding: 0.7rem 0.5rem;
+    }
+
+    .nav-links.open {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+
+    .nav-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .hero {
@@ -1074,5 +1128,18 @@ footer {
 
     .section-title {
         font-size: 2rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
     }
 }

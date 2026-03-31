@@ -15,7 +15,7 @@ open index.html
 - Content: `index.html`
 - Styles: `style.css`
 - Interactions: `script.js`
-- Resume file: `Analytics Engineer - Muhammad Syafiq Farhan.pdf`
+- Resume file: `your-resume.pdf`
 
 ## Contact
 

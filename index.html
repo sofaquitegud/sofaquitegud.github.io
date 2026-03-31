@@ -43,14 +43,10 @@
                 <i class="fas fa-bars"></i>
             </button>
             <div class="nav-links" id="nav-links">
-                <a href="#hero">Home</a>
                 <a href="#about">About</a>
                 <a href="#experience">Experience</a>
-                <a href="#education">Education</a>
                 <a href="#projects">Projects</a>
                 <a href="#skills">Skills</a>
-                <a href="#certifications">Certifications</a>
-                <a href="#contact">Contact</a>
             </div>
         </div>
     </nav>
@@ -73,14 +69,13 @@
                 <a href="mailto:syafiq.mfaridz@gmail.com" class="btn-primary">
                     <i class="fas fa-envelope"></i> Contact Me
                 </a>
-                <a href="Analytics Engineer - Muhammad Syafiq Farhan.pdf" download class="btn-secondary">
+                <a href="Data Engineer - Muhammad Syafiq Farhan v2.pdf" download class="btn-secondary">
                     <i class="fas fa-download"></i> Resume
                 </a>
             </div>
             <div class="hero-socials">
                 <a href="https://www.linkedin.com/in/syfqfrhnn" target="_blank" rel="noopener noreferrer"
-                    aria-label="LinkedIn"><i
-                        class="fab fa-linkedin"></i></a>
+                    aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/sofaquitegud" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
                         class="fab fa-github"></i></a>
                 <a href="mailto:syafiq.mfaridz@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
@@ -136,16 +131,12 @@
                         <h3>Analytics Engineer</h3>
                         <h4>OR Technologies Sdn Bhd</h4>
                         <ul>
-                            <li>Designed and supported analytics workflows that transformed raw client data into
-                                structured datasets for Tableau reporting.</li>
-                            <li>Maintained and enhanced Alteryx-based transformation pipelines, ensuring consistency
-                                between source data and reporting outputs.</li>
-                            <li>Supported Alteryx Server migration, validating transformed datasets, schedules, and
-                                downstream reports post-migration.</li>
-                            <li>Investigated data quality and transformation issues, resolving discrepancies impacting
-                                business dashboards and KPIs.</li>
-                            <li>Collaborated with clients and internal stakeholders to refine data logic and align
-                                analytics outputs with business requirements.</li>
+                            <li>Migrated enterprise Alteryx Server infrastructure with zero workflow loss, ensuring continuity of critical data pipelines.</li>
+                            <li>Designed and optimized ETL pipelines supporting enterprise reporting, improving processing efficiency and reliability.</li>
+                            <li>Resolved 20+ production data issues by identifying root causes in pipeline logic, reducing recurring failures.</li>
+                            <li>Redesigned inefficient workflows in collaboration with stakeholders, improving data processing time and system stability.</li>
+                            <li>Built and maintained automated tax reporting pipelines, reducing manual workload by ~70%.</li>
+                            <li>Implemented improvements in pipeline logic and documentation to enhance data consistency and maintainability.</li>
                         </ul>
                     </div>
                 </div>
@@ -154,15 +145,13 @@
                     <div class="timeline-content">
                         <span class="timeline-date">October 2024 - April 2025</span>
                         <h3>Artificial Intelligence Researcher Intern</h3>
-                        <h4>TM Research & Development</h4>
+                        <h4>TM Research &amp; Development</h4>
                         <ul>
-                            <li>Built transformation logic to convert raw health and operational data into
-                                analytics-ready datasets.</li>
-                            <li>Performed exploratory data analysis to identify trends across demographics and time
-                                periods.</li>
-                            <li>Standardized data schemas to support both analytical reporting and API consumption.</li>
-                            <li>Worked cross-functionally with engineering teams to ensure analytics outputs were
-                                accurate and interpretable.</li>
+                            <li>Built Python-based data pipelines ingesting data from CSV and PostgreSQL sources.</li>
+                            <li>Implemented data validation frameworks using structured schema checks to ensure data quality.</li>
+                            <li>Developed REST APIs using FastAPI to expose processed data for downstream applications.</li>
+                            <li>Designed modular data processing logic for health metrics aggregation and reporting.</li>
+                            <li>Collaborated across frontend, backend, and database teams to deliver integrated data solutions.</li>
                         </ul>
                     </div>
                 </div>
@@ -203,22 +192,20 @@
     <!-- Projects Section -->
     <section id="projects" class="section projects-section">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
-
-            <!-- Featured Project -->
+            <h2 class="section-title">Projects</h2>            <!-- Featured Project -->
             <div class="project-featured">
                 <div class="project-featured-content">
                     <span class="project-badge">Featured Project</span>
-                    <h3>Malaysia Economic Data Pipeline</h3>
-                    <p>End-to-end data pipeline using Medallion Architecture (Bronze → Silver → Gold) to ingest,
-                        transform, and visualize Malaysia's economic indicators from data.gov.my APIs.</p>
+                    <h3>Malaysia Cost of Living &amp; Salary Reality</h3>
+                    <p>Designed and implemented an end-to-end data pipeline using Medallion Architecture on Databricks, ingesting and unifying 7 DOSM datasets into Delta Lake to evaluate income vs inflation trends in Malaysia.</p>
                     <div class="project-tech">
-                        <span>Python</span>
-                        <span>PostgreSQL</span>
-                        <span>Streamlit</span>
+                        <span>PySpark</span>
+                        <span>Delta Lake</span>
+                        <span>Plotly</span>
                         <span>Medallion Architecture</span>
                     </div>
-                    <a href="https://github.com/sofaquitegud/economic-data-pipeline" target="_blank" rel="noopener noreferrer"
+                    <div class="project-impact">Impact: Scalable, cloud-based pipeline demonstrating distributed processing, data modeling, and analytics readiness.</div>
+                    <a href="https://github.com/sofaquitegud/my-living-index" target="_blank" rel="noopener noreferrer"
                         class="project-link">
                         <i class="fab fa-github"></i> View on GitHub
                     </a>
@@ -230,27 +217,26 @@
 
             <!-- Project Grid -->
             <div class="projects-grid">
-                <a href="https://github.com/sofaquitegud/sales-use-tax-analytics" target="_blank" rel="noopener noreferrer"
+                <a href="https://github.com/sofaquitegud/economic-data-pipeline" target="_blank" rel="noopener noreferrer"
                     class="project-card">
-                    <h3>Sales & Use Tax Automation</h3>
-                    <p>Automated multi-state tax calculations using Alteryx & Tableau, cutting manual processing time by
-                        70%.</p>
-                    <div class="project-tech">
-                        <span>Alteryx</span>
-                        <span>Tableau</span>
-                        <span>Automation</span>
-                    </div>
-                </a>
-                <a href="https://github.com/sofaquitegud/pulse-stream" target="_blank" rel="noopener noreferrer"
-                    class="project-card">
-                    <h3>Pulse-Stream</h3>
-                    <p>Real-time streaming analytics pipeline for cryptocurrency price tracking with Apache Kafka and
-                        live dashboards.</p>
+                    <h3>Malaysia Economic Data Pipeline</h3>
+                    <p>End-to-end pipeline using Medallion Architecture ingesting 5 government APIs, with dbt transformations, Pydantic validation, Airflow orchestration, and Docker containerization.</p>
                     <div class="project-tech">
                         <span>Python</span>
-                        <span>Kafka</span>
                         <span>PostgreSQL</span>
-                        <span>Streamlit</span>
+                        <span>dbt</span>
+                        <span>Airflow</span>
+                        <span>Docker</span>
+                    </div>
+                </a>
+                <a href="https://github.com/sofaquitegud/ehealth-analyser" target="_blank" rel="noopener noreferrer"
+                    class="project-card">
+                    <h3>Staff Health Analytics System</h3>
+                    <p>End-to-end data processing system with CSV &amp; PostgreSQL ingestion, health metric computation, and FastAPI endpoints for downstream consumption with AI-generated recommendations.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>FastAPI</span>
+                        <span>PostgreSQL</span>
                     </div>
                 </a>
                 <a href="https://github.com/sofaquitegud/NFL_Big_Data_Bowl_2026" target="_blank" rel="noopener noreferrer"
@@ -263,7 +249,7 @@
                         <span>Visualization</span>
                     </div>
                 </a>
-            </div>
+            </div> </div>
         </div>
     </section>
 
@@ -273,56 +259,58 @@
             <h2 class="section-title">Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3><i class="fas fa-chart-bar"></i> Visualization</h3>
-                    <div class="skill-pills">
-                        <span>Tableau</span>
-                        <span>Power BI</span>
-                        <span>Streamlit</span>
-                        <span>Plotly</span>
-                        <span>Matplotlib</span>
-                        <span>Seaborn</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-database"></i> Data Analysis</h3>
-                    <div class="skill-pills">
-                        <span>EDA</span>
-                        <span>Statistical Analysis</span>
-                        <span>Hypothesis Testing</span>
-                        <span>A/B Testing</span>
-                        <span>Regression Analysis</span>
-                        <span>KPI Definition</span>
-                        <span>Star Schema Modeling</span>
-                        <span>Data Cleaning</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Tools & Languages</h3>
+                    <h3><i class="fas fa-code"></i> Programming &amp; Querying</h3>
                     <div class="skill-pills">
                         <span>Python</span>
                         <span>SQL</span>
-                        <span>PostgreSQL</span>
-                        <span>Alteryx</span>
-                        <span>Pandas</span>
-                        <span>NumPy</span>
-                        <span>Scikit-learn</span>
-                        <span>Excel</span>
-                        <span>Git</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-cogs"></i> Data Engineering</h3>
+                    <h3><i class="fas fa-stream"></i> Data Engineering &amp; Pipelines</h3>
                     <div class="skill-pills">
-                        <span>Apache Airflow</span>
-                        <span>Apache Kafka</span>
-                        <span>Spark Streaming</span>
-                        <span>ETL Pipelines</span>
-                        <span>Docker</span>
-                        <span>Data Warehousing</span>
-                        <span>API Integration</span>
+                        <span>ETL Development</span>
+                        <span>Data Modeling</span>
+                        <span>Medallion Architecture</span>
+                        <span>dbt</span>
                     </div>
                 </div>
-            </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Databases &amp; Storage</h3>
+                    <div class="skill-pills">
+                        <span>PostgreSQL</span>
+                        <span>MongoDB</span>
+                        <span>MSSQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-cogs"></i> Orchestration &amp; Processing</h3>
+                    <div class="skill-pills">
+                        <span>Apache Airflow</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-plug"></i> APIs &amp; Backend</h3>
+                    <div class="skill-pills">
+                        <span>REST APIs</span>
+                        <span>FastAPI</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools &amp; Infrastructure</h3>
+                    <div class="skill-pills">
+                        <span>Docker</span>
+                        <span>Git</span>
+                        <span>Alteryx</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-chart-bar"></i> Visualization</h3>
+                    <div class="skill-pills">
+                        <span>Tableau</span>
+                        <span>Streamlit</span>
+                    </div>
+                </div>
+            </div> </div>
         </div>
     </section>
 
@@ -331,28 +319,32 @@
         <div class="container">
             <h2 class="section-title">Certifications</h2>
             <div class="cert-grid">
-                <a href="https://www.credly.com/badges/9ba890db-3544-4fa0-8de3-948a7c8e6a20/linked_in_profile"
+                <a href="https://www.credly.com/badges/d93672f2-b8a5-4419-b408-a64c7213eb08/public_url"
                     target="_blank" rel="noopener noreferrer" class="cert-card">
                     <i class="fas fa-certificate"></i>
-                    <span>Alteryx Designer Advanced</span>
+                    <div class="cert-info">
+                        <span class="cert-name">CompTIA Data+ (DA0-002)</span>
+                        <span class="cert-issuer">CompTIA</span>
+                        <span class="cert-date">Issued: March 2026 &bull; Expires: March 2029</span>
+                    </div>
                 </a>
-                <a href="https://www.credly.com/badges/29634630-e330-4984-b097-0ab23a81d20e/public_url" target="_blank"
-                    rel="noopener noreferrer"
-                    class="cert-card">
-                    <i class="fas fa-certificate"></i>
-                    <span>Alteryx Server Admin</span>
-                </a>
-                <a href="https://www.coursera.org/account/accomplishments/specialization/5HMST5ZVDDHY" target="_blank"
-                    rel="noopener noreferrer"
-                    class="cert-card">
+                <a href="https://www.credly.com/badges/e235dfde-6517-431d-9682-8167b8cc0165/public_url" target="_blank"
+                    rel="noopener noreferrer" class="cert-card">
                     <i class="fab fa-google"></i>
-                    <span>Google Advanced Data Analytics</span>
+                    <div class="cert-info">
+                        <span class="cert-name">Google Advanced Data Analytics</span>
+                        <span class="cert-issuer">Google</span>
+                        <span class="cert-date">Issued: April 2025</span>
+                    </div>
                 </a>
-                <a href="https://www.coursera.org/account/accomplishments/specialization/O6I3JO6SR2LP" target="_blank"
-                    rel="noopener noreferrer"
-                    class="cert-card">
+                <a href="https://www.credly.com/badges/f27242b9-7228-41e8-bcd2-1f2ee6e39047/public_url" target="_blank"
+                    rel="noopener noreferrer" class="cert-card">
                     <i class="fab fa-google"></i>
-                    <span>Google Business Intelligence</span>
+                    <div class="cert-info">
+                        <span class="cert-name">Google Business Intelligence</span>
+                        <span class="cert-issuer">Google</span>
+                        <span class="cert-date">Issued: August 2025</span>
+                    </div>
                 </a>
             </div>
         </div>
@@ -366,14 +358,7 @@
             <a href="mailto:syafiq.mfaridz@gmail.com" class="btn-primary btn-large">
                 <i class="fas fa-paper-plane"></i> Send an Email
             </a>
-            <div class="contact-socials">
-                <a href="https://www.linkedin.com/in/syfqfrhnn" target="_blank" rel="noopener noreferrer"
-                    aria-label="LinkedIn"><i
-                        class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/sofaquitegud" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
-                        class="fab fa-github"></i></a>
-                <a href="mailto:syafiq.mfaridz@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-            </div>
+
         </div>
     </section>
 
